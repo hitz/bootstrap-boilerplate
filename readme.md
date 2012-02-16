@@ -11,6 +11,9 @@ This is my quick hack of combining these two projects and some additional bits t
 
 Clone the git repo - `git clone git://github.com/pelted/html5-boilerplate.git` - or [download it](https://github.com/pelted/html5-boilerplate/zipball/master)
 
+	git submodule init
+	git submodule update
+
 	cd lib/vendor/bootstrap/less/
 	lessc bootstrap.less > ../../../../css/bootstrap.css
 	lessc responsive.less > ../../../../css/bootstrap-responsive.css
