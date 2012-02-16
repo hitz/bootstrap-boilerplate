@@ -1,48 +1,35 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# [HTML5 Boilerplate](http://html5boilerplate.com) with [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
 
-HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
+This is my quick hack of combining these two projects and some additional bits that I tend to reuse. This may be of use to someone else, but more likely than not you will want something similar for your own use.
 
-This project is the product of many years of iterative development and combined community knowledge. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
+## Prereqs
 
+	npm install uglify-js
+	gem install lessc
 
 ## Quick start
 
-Clone the git repo - `git clone git://github.com/h5bp/html5-boilerplate.git` - or [download it](https://github.com/h5bp/html5-boilerplate/zipball/master)
+Clone the git repo - `git clone git://github.com/pelted/html5-boilerplate.git` - or [download it](https://github.com/pelted/html5-boilerplate/zipball/master)
 
+	cd lib/vendor/bootstrap/less/
+	lessc bootstrap.less > ../../../../css/bootstrap.css
+	lessc responsive.less > ../../../../css/bootstrap-responsive.css
+	
+	cd ..
+	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js > ../../../js/libs/bootstrap.js
+	uglifyjs -nc ../../../js/libs/bootstrap.js > ../../../js/libs/bootstrap.min.js
 
 ## Features
 
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* CSS normalizations and common bug fixes.
-* IE-specific classes for easier cross-browser control.
-* A default print stylesheet, performance optimized.
-* Mobile browser optimizations.
-* Protection against any stray `console.log` causing JavaScript errors in IE6/7.
-* The latest jQuery via CDN, with a local fallback.
-* A custom Modernizr build for feature detection.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
-
-
-## Contributing
-
-Anyone and everyone is welcome to [contribute](https://github.com/h5bp/html5-boilerplate/wiki/contribute). Hundreds of developers have helped make the HTML5 Boilerplate what it is today.
+* All this bits from HTML5 Boilerplate
+* Plus Twitter's Bootstrap css toolkit (as a submodule)
 
 
 ## Project information
 
 * Source: http://github.com/h5bp/html5-boilerplate
-* Web: http://html5boilerplate.com
-* Docs: http://html5boilerplate.com/docs
-* Twitter: http://twitter.com/h5bp
+* Source: http://github.com/twitter/bootstrap
 
-
-## License
 
 ### Major components:
 
