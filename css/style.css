@@ -1,9 +1,13 @@
 /* Removed HTML5 Boilerplate CSS since this is using Twitter/Bootstrap */
 body {
   margin-top: 40px;
-  background-color: #e4e4e4;
+  background-color: #000000;
 }
 #main.container {
   padding: 8px;
-  background-color: #ffffff;
+  background-color: #000000;
+}
+img {
+	border: 0;
+	padding: 14px;
 }
