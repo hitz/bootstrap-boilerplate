@@ -11,3 +11,17 @@ img {
 	border: 0;
 	padding: 14px;
 }
+#detail h3,h4{
+	color: #FFFFFF;
+}
+#splash img{
+	height: 600px;
+}
+footer p {
+	color: #FFFFFF;
+	padding-left: 30px;
+}
+#fb {
+	height: 30px;
+	padding: 0 10px;
+}
